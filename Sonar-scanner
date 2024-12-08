@@ -1,0 +1,10 @@
+wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-latest-linux.zip
+
+
+unzip sonar-scanner-cli-latest-linux.zip
+mv sonar-scanner-latest /opt/sonar-scanner
+
+
+export PATH=$PATH:/opt/sonar-scanner/bin
+
+sonar-scanner --version
